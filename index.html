@@ -44,6 +44,12 @@
             object-fit: cover;
         }
 
+        .testimonial-image {
+            width: 96px;
+            height: 96px;
+            object-fit: cover;
+        }
+
         @media (max-width: 991.98px) {
             .hero-section {
                 min-height: calc(100vh - 56px);
@@ -98,7 +104,7 @@
 
         <section class="py-5" aria-labelledby="services-title">
             <div class="container py-4">
-                <h2 id="services-title" class="text-center mb-5">Our Services</h2>
+                <h2 id="services-title" class="mb-5">Our Services</h2>
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-lg-3">
                         <article class="card service-card shadow h-100">
@@ -136,6 +142,80 @@
                             </div>
                         </article>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light" aria-labelledby="wellness-tips-title">
+            <div class="container py-4">
+                <h2 id="wellness-tips-title" class="mb-4">Wellness Tips</h2>
+                <p class="mb-3" style="max-width: 42rem;">
+                    Small, consistent habits can help you feel more balanced and refreshed each day:
+                </p>
+                <ul style="max-width: 42rem;">
+                    <li>Drink plenty of water throughout the day.</li>
+                    <li>Take regular breaks to stretch and breathe deeply.</li>
+                    <li>Prioritize a consistent, restful sleep routine.</li>
+                    <li>Choose nourishing foods that support steady energy.</li>
+                    <li>Make time for movement and moments of quiet.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="py-5" aria-labelledby="testimonials-title">
+            <div class="container py-4">
+                <h2 id="testimonials-title" class="mb-4">Testimonials</h2>
+                <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Testimonial 1"></button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+                            aria-label="Testimonial 2"></button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+                            aria-label="Testimonial 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/lee.jpg" class="testimonial-image d-block mx-auto rounded-circle"
+                                alt="Lee, spa guest" />
+                            <div class="text-center mt-3">
+                                <blockquote class="blockquote">
+                                    <p>“The wellness ritual gave me the reset I needed after a busy week.”</p>
+                                </blockquote>
+                                <p class="fw-semibold mb-0">Lee</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/maria.jpg" class="testimonial-image d-block mx-auto rounded-circle"
+                                alt="Maria, spa guest" />
+                            <div class="text-center mt-3">
+                                <blockquote class="blockquote">
+                                    <p>“My facial treatment left my skin glowing and my whole day feeling brighter.”</p>
+                                </blockquote>
+                                <p class="fw-semibold mb-0">Maria</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/rahul.jpg" class="testimonial-image d-block mx-auto rounded-circle"
+                                alt="Rahul, spa guest" />
+                            <div class="text-center mt-3">
+                                <blockquote class="blockquote">
+                                    <p>“The massage left me feeling completely refreshed and deeply relaxed.”</p>
+                                </blockquote>
+                                <p class="fw-semibold mb-0">Rahul</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous testimonial</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next testimonial</span>
+                    </button>
                 </div>
             </div>
         </section>
