@@ -17,7 +17,7 @@
         }
 
         .hero-section {
-            min-height: calc(100vh - 72px);
+            min-height: 50vh;
             color: #FFEBD4;
             background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
                 url("assets/images/hero.jpg");
@@ -37,6 +37,11 @@
 
         .hero-section .btn-light {
             color: #3B2F2F;
+        }
+
+        .service-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
         }
 
         @media (max-width: 991.98px) {
@@ -88,6 +93,50 @@
                     Escape the everyday with restorative treatments inspired by the calm of the sea.
                 </p>
                 <a class="btn btn-light btn-lg px-4" href="#book-now">Book your treatment</a>
+            </div>
+        </section>
+
+        <section class="py-5" aria-labelledby="services-title">
+            <div class="container py-4">
+                <h2 id="services-title" class="text-center mb-5">Our Services</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card service-card shadow h-100">
+                            <img src="assets/images/massage.jpg" class="card-img-top" alt="Massage therapy treatment" />
+                            <div class="card-body">
+                                <h3 class="card-title h5">Massage Therapy</h3>
+                                <p class="card-text">Release tension and restore balance with a massage tailored to your needs.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card service-card shadow h-100">
+                            <img src="assets/images/facial.jpg" class="card-img-top" alt="Facial treatment" />
+                            <div class="card-body">
+                                <h3 class="card-title h5">Facial Treatments</h3>
+                                <p class="card-text">Refresh and nourish your skin with restorative facial treatments.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card service-card shadow h-100">
+                            <img src="assets/images/body.jpg" class="card-img-top" alt="Body treatment" />
+                            <div class="card-body">
+                                <h3 class="card-title h5">Body Treatments</h3>
+                                <p class="card-text">Rejuvenate from head to toe with soothing exfoliation and hydration.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card service-card shadow h-100">
+                            <img src="assets/images/wellness.jpg" class="card-img-top" alt="Peaceful wellness ritual" />
+                            <div class="card-body">
+                                <h3 class="card-title h5">Wellness Rituals</h3>
+                                <p class="card-text">Find a calmer rhythm with mindful rituals designed for complete renewal.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
