@@ -9,11 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <style>
         .navbar {
             --bs-navbar-color: #3B2F2F;
             --bs-navbar-hover-color: #3B2F2F;
             --bs-navbar-active-color: #3B2F2F;
+        }
+
+        main {
+            margin: 2rem 0;
         }
 
         .hero-section {
@@ -31,6 +36,11 @@
             font-family: "Handlee", cursive;
         }
 
+        main h2 {
+            font-family: "Handlee", cursive;
+            font-weight: 700;
+        }
+
         .hero-section p {
             color: #FFEBD4 !important;
         }
@@ -42,6 +52,11 @@
         .service-card .card-img-top {
             height: 200px;
             object-fit: cover;
+        }
+
+        .site-footer {
+            background-color: #6F4E37;
+            color: #FFEBD4;
         }
 
         .testimonial-image {
@@ -60,7 +75,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <img src="assets/images/logo.png" alt="Seven Seas Spa logo" width="30" height="30" />
@@ -220,6 +235,26 @@
             </div>
         </section>
     </main>
+
+    <footer class="site-footer py-4">
+        <div class="container d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3">
+            <p class="mb-0">&copy; 2026 Seven Seas Spa. All rights reserved.</p>
+            <div class="d-flex gap-3" aria-label="Social media links">
+                <a class="text-reset fs-5" href="https://www.facebook.com" aria-label="Facebook">
+                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+                <a class="text-reset fs-5" href="https://x.com" aria-label="X">
+                    <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                </a>
+                <a class="text-reset fs-5" href="https://www.instagram.com" aria-label="Instagram">
+                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+                <a class="text-reset fs-5" href="https://www.linkedin.com" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
