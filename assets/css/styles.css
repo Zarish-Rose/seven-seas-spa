@@ -1,0 +1,59 @@
+        .navbar {
+            --bs-navbar-color: #3B2F2F;
+            --bs-navbar-hover-color: #3B2F2F;
+            --bs-navbar-active-color: #3B2F2F;
+        }
+
+        main {
+            margin: 2rem 0;
+        }
+
+        .hero-section {
+            min-height: 50vh;
+            color: #FFEBD4;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                url(../images/hero.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hero-section h1 {
+            color: #FFEBD4;
+            font-family: "Handlee", cursive;
+        }
+
+        main h2 {
+            font-family: "Handlee", cursive;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            color: #FFEBD4 !important;
+        }
+
+        .hero-section .btn-light {
+            color: #3B2F2F;
+        }
+
+        .service-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .site-footer {
+            background-color: #6F4E37;
+            color: #FFEBD4;
+        }
+
+        .testimonial-image {
+            width: 96px;
+            height: 96px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 991.98px) {
+            .hero-section {
+                min-height: calc(100vh - 56px);
+            }
+        }
