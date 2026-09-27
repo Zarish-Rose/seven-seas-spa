@@ -6,6 +6,7 @@
 
         main {
             flex: 1;
+            margin: 0 0 2rem;
         }
 
         .navbar {
@@ -14,15 +15,11 @@
             --bs-navbar-active-color: #3B2F2F;
         }
 
-        main {
-            margin: 2rem 0;
-        }
-
         .hero-section {
             min-height: 50vh;
             color: #FFEBD4;
             background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-                url(../images/hero.jpg);
+                url(../images/hero.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -43,12 +40,50 @@
         }
 
         .hero-section .btn-light {
-            color: #3B2F2F;
+            background-color: #6F4E37;
+            border-color: #6F4E37;
+            color: #FFEBD4;
+        }
+
+        .hero-section .btn-light:hover,
+        .hero-section .btn-light:focus-visible {
+            background-color: #3B2F2F;
+            border-color: #3B2F2F;
+            color: #FFEBD4;
+        }
+
+        @media (min-width: 768px) {
+            .hero-section .lead {
+                white-space: nowrap;
+            }
         }
 
         .service-card .card-img-top {
             height: 200px;
             object-fit: cover;
+        }
+
+        .services-list .service-card .card-img-top {
+            height: 360px;
+        }
+
+        .service-card .btn-primary,
+        .contact-form .btn-primary,
+        .thankyou-page .btn-primary {
+            background-color: #6F4E37;
+            border-color: #6F4E37;
+            color: #FFEBD4;
+        }
+
+        .service-card .btn-primary:hover,
+        .service-card .btn-primary:focus-visible,
+        .contact-form .btn-primary:hover,
+        .contact-form .btn-primary:focus-visible,
+        .thankyou-page .btn-primary:hover,
+        .thankyou-page .btn-primary:focus-visible {
+            background-color: #3B2F2F;
+            border-color: #3B2F2F;
+            color: #FFEBD4;
         }
 
         .site-footer {
